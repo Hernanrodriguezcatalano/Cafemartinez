@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+</head>
+
+
+
+<header></header>
+
+<!-- Menu -->
+
+<section></section>
+
+            <div class="fila">
+
+                <div class="azul" onclick="autocompletar('175', 'Ensalada de Salmon y Ricota')">
+                    <div class="Codigo">
+                        <h6>175</h6>
+                    </div>
+                    <h6>Ensalada de Salmon y Ricota</h6>
+                </div>
+                
+                <div class="verde" onclick="autocompletar('176', 'Ensalada Caesar')">
+                    <div class="Codigo">
+                        <h6>176</h6>
+                    </div>
+                    <h6>Ensalada Caesar</h6>
+                </div>
+                
+                <div class="naranja" onclick="autocompletar('535', 'Ensalada Caesar S/ Pollo')">
+                    <div class="Codigo">
+                        <h6>535</h6>
+                    </div>
+                    <h6>Ensalada Caesar S/ Pollo</h6>
+                </div>
+                
+                <div class="rojo" onclick="autocompletar('1290', 'Ensalada de Salmon Palta y Cebolla')">
+                    <div class="Codigo">
+                        <h6>1290</h6>
+                    </div>
+                    <h6>Ensalada de Salmon Palta y Cebolla</h6>
+                </div>
+                
+                <div class="verde" onclick="autocompletar('3737', 'Ensalada Lentejas Marinadas')">
+                    <div class="Codigo">
+                        <h6>3737</h6>
+                    </div>
+                    <h6>Ensalada Lentejas Marinadas</h6>
+                </div>
+                
+                <div class="naranja" onclick="autocompletar('3738', 'Ensalada Lentejas Marinadas y Pollo')">
+                    <div class="Codigo">
+                        <h6>3738</h6>
+                    </div>
+                    <h6>Ensalada Lentejas Marinadas y Pollo</h6>
+                </div>
+                
+                <div class="verde" onclick="autocompletar('4315', 'Ensalada Remolacha y Naranja')">
+                    <div class="Codigo">
+                        <h6>4315</h6>
+                    </div>
+                    <h6>Ensalada Remolacha y Naranja</h6>
+                </div>
+                
+                <div class="naranja" onclick="autocompletar('4316', 'Ensalada Remolacha, Naranja y Pollo')">
+                    <div class="Codigo">
+                        <h6>4316</h6>
+                    </div>
+                    <h6>Ensalada Remolacha, Naranja y Pollo</h6>
+                </div>
+                
+                <div class="azul" onclick="autocompletar('4342', 'Caesar Club Sandwich')">
+                    <div class="Codigo">
+                        <h6>4342</h6>
+                    </div>
+                    <h6>Caesar Club Sandwich</h6>
+                </div>
+                
+                <div class="azul" onclick="autocompletar('3354', 'Meat & Cheese')">
+                    <div class="Codigo">
+                        <h6>3354</h6>
+                    </div>
+                    <h6>Meat & Cheese</h6>
+                </div>
+                
+                <div class="verde" onclick="autocompletar('3733', 'Porción de Huevos Revueltos')">
+                    <div class="Codigo">
+                        <h6>3733</h6>
+                    </div>
+                    <h6>Porción de Huevos Revueltos</h6>
+                </div>
+                
+                <div class="naranja" onclick="autocompletar('3745', '2 x Meat & Cheese + Bebida')">
+                    <div class="Codigo">
+                        <h6>3745</h6>
+                    </div>
+                    <h6>2 x Meat & Cheese + Bebida</h6>
+                </div>
+                
+                <div class="azul" onclick="autocompletar('4141', '2 x Meat & Cheese + Coca Cola PY')">
+                    <div class="Codigo">
+                        <h6>4141</h6>
+                    </div>
+                    <h6>2 x Meat & Cheese + Coca Cola PY</h6>
+                </div>
+                
+                <div class="verde" onclick="autocompletar('4580', 'Bagel Salmon')">
+                    <div class="Codigo">
+                        <h6>4580</h6>
+                    </div>
+                    <h6>Bagel Salmon</h6>
+                </div>
+                
+                <div class="naranja" onclick="autocompletar('4613', 'Combo Dia de la Niñez')">
+                    <div class="Codigo">
+                        <h6>4613</h6>
+                    </div>
+                    <h6>Combo Dia de la Niñez</h6>
+                </div>
+                
+                <div class="azul" onclick="autocompletar('4619', 'Bagel de Palta y Huevo')">
+                    <div class="Codigo">
+                        <h6>4619</h6>
+                    </div>
+                    <h6>Bagel de Palta y Huevo</h6>
+                </div>
+                
+                <div class="verde" onclick="autocompletar('260', 'Tarta')">
+                    <div class="Codigo">
+                        <h6>260</h6>
+                    </div>
+                    <h6>Tarta</h6>
+                </div>
+                
+
+
+
+
+
+            </div> 
+    </div>
+
+
+
+<!-- Formulario -->
+<form></form>
+
+</main>
+
+<footer></footer>
+
+</body>
+<!-- Mantiene abierto el menu -->
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const menuButton = document.getElementById("menuButton");
+        const dropdownContent = document.querySelector(".dropdown-content");
+        let isOpen = false; // Variable para rastrear el estado del menú
+
+        menuButton.addEventListener("mouseenter", function (e) {
+            if (!isOpen) {
+                dropdownContent.style.display = "block";
+                dropdownContent.style.opacity = 1;
+                dropdownContent.style.pointerEvents = "auto";
+                isOpen = true; // Abre el menú en la primera interacción
+            } else {
+                dropdownContent.style.display = "none";
+                dropdownContent.style.opacity = 0;
+                dropdownContent.style.pointerEvents = "none";
+                isOpen = false; // Cierra el menú en la segunda interacción
+            }
+        });
+    });
+    </script>
+
+<!-- Botón de subir -->
+<a href="#top">
+    <div class="boton-subir">
+        <label for="showScrollButton">
+            <span>&#8593;</span>
+        </label>
+    </div>
+</a>
+
+<script>
+    window.addEventListener("scroll", function () {
+        var botonSubir = document.querySelector(".boton-subir");
+
+        // Si el usuario ha desplazado más de 300 píxeles hacia abajo, muestra el botón
+        if (window.scrollY > 300) {
+            botonSubir.style.display = "block";
+        } else {
+            botonSubir.style.display = "none";
+        }
+    });
+</script>
+<link rel="stylesheet"
+    href="https://cafemartinez.vtexassets.com/_v/public/assets/v1/bundle/css/asset.min.css?v=3&amp;files=theme,cafemartinez.store@3.0.41$style.common,cafemartinez.store@3.0.41$style.small,cafemartinez.store@3.0.41$style.notsmall,cafemartinez.store@3.0.41$style.large,cafemartinez.store@3.0.41$style.xlarge&amp;files=fonts,ebda5b7f33d97a654d0dee0aac558a02d0c8b879&amp;files=npm,animate.css@3.7.0/animate.min.css&amp;files=react~vtex.render-runtime@8.134.1,common&amp;files=react~vtex.store-components@3.169.0,Container,4,SearchBar,Logo&amp;files=react~vtex.styleguide@9.146.9,0,1,Spinner&amp;files=react~vtex.admin-pages@4.51.2,HighlightOverlay&amp;files=react~vtex.modal-layout@0.14.1,0&amp;files=react~vtex.flex-layout@0.21.3,0&amp;files=react~vtex.rich-text@0.16.0,index&amp;files=react~cafemartinez.store@3.0.41,GlobalCss,NotificationBar,FormNewsletterPopUp&amp;files=react~vtex.login@2.57.0,1&amp;files=react~vtex.minicart@2.67.1,Minicart&amp;files=react~vtex.search@2.16.5,Autocomplete&amp;files=overrides,vtex.product-list@0.37.1$overrides,vtex.minicart@2.67.1$overrides,cafemartinez.store@3.0.41$overrides,cafemartinez.store@3.0.41$fonts&amp;workspace=master"
+    crossorigin="" class="vtex_io_uncritical_css" id="uncritical_style_0">
+    <script src="./Js/header.js"></script>
+    <script src="../Js/headerpaginas.js"></script>
+    <script src="../Js/footer.js"></script>
+    <script src="../Js/formulario.js"></script>
+    <script src="../Js/head.js"></script>
+    <script src="../Js/menu.js"></script>
+    <script src="./Js/Java.Js"></script>
+    <script src="../Js/auth.js"></script>
+
+</html>
